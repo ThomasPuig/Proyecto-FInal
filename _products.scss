@@ -5,24 +5,39 @@
     text-align: center;
   }
 
-  .sectionp {
+.sectionp {
     width: 400px;
-    margin: 10px auto;  }
+    margin: 10px auto;
+}
 
-    section article {
+section article {
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(180, 180, 180);
+    margin: 1rem 0;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 0 0.1rem 0.4rem aqua;
+    }
+    h2 {
+        margin: 1rem;
+    }
+    p {
+        margin: 1rem;
+    }
+}
+
+section .articlec{
         transition: box-shadow 0.3s ease;
         background-color: rgb(180, 180, 180);
-        margin: 1rem 0;
+        text-align: center;
+        margin: 5px auto;
         border-radius: 1rem;
-        padding: 0.5rem 0;
+        padding: 2rem 0;
         cursor: pointer;
         &:hover {
-            box-shadow: 0 0.1rem 0.4rem aqua;
-        }
-        h2 {
-            margin: 1rem;
-        }
-        p {
-            margin: 1rem;
+            box-shadow: 0 0.1rem 0.4rem rgb(0, 16, 16);
         }
     }
+
