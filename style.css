@@ -204,43 +204,17 @@ header .contenedor .navbar .logo {
   text-align: center;
 }
 
-/*
-.sectionp {
-    width: 400px;
-    margin: 10px auto;
-}
-
-section article {
-    transition: box-shadow 0.3s ease;
-    background-color: rgb(180, 180, 180);
-    margin: 1rem 0;
-    border-radius: 1rem;
-    padding: 0.5rem 0;
-    cursor: pointer;
-    &:hover {
-        box-shadow: 0 0.1rem 0.4rem aqua;
-    }
-    h2 {
-        margin: 1rem;
-    }
-    p {
-        margin: 1rem;
-    }
-}*/
 .container {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 5px;
 }
 
 .card {
   width: 50%;
-  margin: 20px;
+  margin: 5px;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
   background: #fff;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
@@ -259,11 +233,11 @@ section article {
 
 .card img {
   width: 100%;
-  height: 280px;
+  height: 300px;
 }
 
 .card .contenido {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -294,6 +268,9 @@ section article {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .card {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -302,6 +279,39 @@ section article {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    width: 50%;
   }
 }
 
@@ -381,6 +391,87 @@ section article {
             flex-direction: row;
     width: 80%;
   }
+}
+
+.containerr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cards {
+  width: 450px;
+  margin: 15px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #e2e2e2;
+  cursor: pointer;
+}
+
+.cards .contenidor {
+  padding: 10px;
+  text-align: center;
+}
+
+.cards .contenidor p {
+  line-height: 1.5;
+  color: #6a6a6a;
+}
+
+.cards .contenidor h2 {
+  font-family: "Acme", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.cards:hover {
+  -webkit-box-shadow: 0 0.1rem 0.4rem #001010;
+          box-shadow: 0 0.1rem 0.4rem #001010;
+}
+
+@media screen and (max-width: 320px) {
+  .containerr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .containerr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .containerr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.sectionp .articlec {
+  width: 450px;
+  background-color: #d7d7d7;
+  text-align: center;
+  margin: 5px auto;
+  border-radius: 1rem;
+  padding: 2rem 0;
+  cursor: pointer;
 }
 
 .pie-pagina {

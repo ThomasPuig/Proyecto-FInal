@@ -1,0 +1,54 @@
+.containerr{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.cards{
+    width: 450px;
+    margin: 15px;
+    transition: box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(226, 226, 226);
+    cursor: pointer;
+}
+
+.cards .contenidor{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.cards .contenidor p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.cards .contenidor h2{
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.cards:hover{
+    box-shadow: 0 0.1rem 0.4rem rgb(0, 16, 16);
+}
+
+@media screen and (max-width: 320px) {
+    .containerr {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .containerr {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .containerr {
+      flex-direction: column;
+    }
+}
